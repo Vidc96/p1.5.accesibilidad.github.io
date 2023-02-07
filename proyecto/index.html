@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katora</title>
+  <!-- Fuente -->
+  <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+  <!-- Hoja de estilo -->
+  <link rel="stylesheet" href="styles/style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.css">
+
+  <link rel="icon" type="image/png" href="images/icons/icon.png">
+  <style>
+    /*SEO h1*/
+    .logo {
+      text-indent: -99999px;
+      width: 120px;
+      height: 27px;
+      background-image: url(./images/logos/logo.png);
+      background-size: 120px 27px;
+      display: block;
+    }
+
+    audio::-webkit-media-controls {
+      height: 10px;
+    }
+
+    audio {
+      height: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Cabecera -->
+  <header style="position:sticky; top: 0; z-index: 12;">
+    <!--Alert info-->
+    <div class="alert-info">
+      <!-- Content alert info -->
+      <div>
+        <p>Get<span> UPTO 40% OFF </span>on your 1st order
+          <a href="#">
+            More details
+          </a>
+        </p>
+      </div>
+      <svg width="24" height="24" opacity="0.6">
+        <line x1="6" y1="6" x2="19" y2="19" stroke="#888" stroke-width="4" />
+        <line x1="19" y1="6" x2="6" y2="19" stroke="#888" stroke-width="4" />
+      </svg>
+    </div>
+    <!-- Nivel superior del header -->
+    <div class="row-upper">
+      <!-- Content row upper -->
+      <div class="content-row-upper">
+        <div>
+          <span>Call us: <a href="#"> 888 - 963 - 600 </a></span>
+        </div>
+        <div>
+
+          <audio controls>
+            <source src="audio/pista-katora.ogg" type="audio/ogg">
+            <source src="audio/pista-katora.mp3" type="audio/mpeg">
+          </audio>
+
+          <select name="...">
+            <option value="">My Account</option>
+          </select>
+          <select name="...">
+            <option value="">English</option>
+          </select>
+          <select name="...">
+            <option value="">USD</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- Nivel inferior del header -->
+    <div class="row-lower">
+      <!-- Content row lower -->
+      <div class="content-row-lower">
+        <div class="content-logo">
+          <h1>
+            <a href="index.hmtl" class="logo">
+              Katora is a distributor of consumer electronics and related services</a>
+          </h1>
+        </div>
+        <!-- Bar navegation -->
+        <nav>
+          <ul>
+            <li>
+              <a href="index.hmtl">
+                <select name="...">
+                  <option value="">HOME</option>
+                </select>
+              </a>
+            </li>
+            <li>
+              <a href="gallery.html">
+                <select name="...">
+                  <option value="">MEGA MENU</option>
+                </select>
+              </a>
+            </li>
+            <li>
+              <a href="details.html">
+                <select name="...">
+                  <option value="">SHOP</option>
+                </select>
+              </a>
+            </li>
+            <li>
+              <a href="list.html">
+                <select name="...">
+                  <option value="">PRODUCT</option>
+                </select>
+              </a>
+            </li>
+            <li>
+              <a href="map.html">
+                <select name="...">
+                  <option value="">PAGES</option>
+                </select>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Tools right -->
+        <div class="options-right">
+          <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Cabecera -->
+  <main>
+    <!-- Contenedor del carrusel -->
+    <section class="section-container">
+      <div class="carousel">
+        <div class="carousel-inner">
+          <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+            checked="checked">
+          <div class="carousel-item"
+            style="background-image: url(./images/sliders/Slider_01_02.png); background-size: cover;">
+            <div class="carrousel-tittle">
+              <h2>FINE WEATHER ALL YEAR ROUND</h2>
+              <span>RECTIFY YOUR FEELING </span>
+              <span>WITH SURROUNDINGS</span>
+              <button>SHOP KNOW</button>
+            </div>
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item"
+            style="background-image: url(./images/sliders/Slider_01_01.png); background-size: cover;">
+            <div class="carrousel-tittle">
+              <h2>Fine weather all year round</h2>
+              <span>Rectify Your Feeling </span>
+              <span>With Surroundings</span>
+              <button>SHOP KNOW</button>
+            </div>
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item"
+            style="background-image: url(./images/sliders/Slider_01_03.png); background-size: cover;">
+            <div class="carrousel-tittle">
+              <h2>Fine weather all year round</h2>
+              <span>Rectify Your Feeling </span>
+              <span>With Surroundings</span>
+              <button>SHOP KNOW</button>
+            </div>
+          </div>
+          <ol class="carousel-indicators">
+            <li>
+              <label for="carousel-1" class="carousel-bullet">
+                <div class="carousel-bullet-1"></div>
+              </label>
+            </li>
+            <li>
+              <label for="carousel-2" class="carousel-bullet">
+                <div class="carousel-bullet-2"></div>
+              </label>
+            </li>
+            <li>
+              <label for="carousel-3" class="carousel-bullet">
+                <div class="carousel-bullet-3"></div>
+              </label>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- Botones del carrusel -->
+    </section>
+    <!-- Contenedor del carrusel -->
+    <!-- Información de servicios -->
+    <section>
+      <h2 style="display:none;">Service information</h2>
+      <article>
+        <a href="#"><i class="fa fa-truck  fa-flip-horizontal" aria-hidden="true"></i></a>
+        <div>
+          <h3>Free Shipping</h3>
+          <p>We provide free shipping for all order over $200.00</p>
+        </div>
+      </article>
+      <article>
+        <a href="#"><i class="fa fa-life-ring" aria-hidden="true"></i></a>
+        <div>
+          <h3>Support 24/7</h3>
+          <p>We provide support to our customers 24 hours.</p>
+        </div>
+      </article>
+      <article>
+        <a href="#"><i class="fa fa-credit-card-alt" aria-hidden="true"></i></a>
+        <div>
+          <h3>Safe Payment</h3>
+          <p>We provide always safe payment methods.</p>
+        </div>
+      </article>
+      <article>
+        <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
+        <div>
+          <h3>Returns</h3>
+          <p>We provide always safe payment methods.</p>
+        </div>
+      </article>
+    </section>
+    <!-- Información de servicios -->
+    <!-- Productos populares-->
+    <section>
+      <div class="section-tittle">
+        <h2>Welcome to Store</h2>
+        <p>Vitae posuere urna blandit sed. Praesent ut dignissim risus. </p>
+      </div>
+      <!-- sección de elementos con distintos artículos relacionados -->
+      <div class="grid">
+        <article>
+          <!-- Imagen del producto -->
+          <a href="#"><img src="images/mobiles_and_tablets/product_image_01.png" alt="Mobiles and Tablets"></a>
+          <!-- Información del producto -->
+          <a href="#">Mobiles and Tablets</a>
+          <h3><a href="#">Original Samsung Galaxy S8 Plus</a></h3>
+          <span class="old-price">$999</span>
+          <span>$900</span>
+        </article>
+        <article>
+          <!-- Imagen del producto -->
+          <a href="#"><img src="images/computers/product_image_02.png" alt="Computers & Accessories"></a>
+          <!-- Información del producto -->
+          <a href="#">Computers & Accessories</a>
+          <h3><a href="#">15-6inch Gaming Notebook Laptop</a></h3>
+          <span class="old-price">$2120</span>
+          <span>$1185</span>
+        </article>
+        <article>
+          <!-- Imagen del producto -->
+          <a href="#"><img src="images/audio_and_video/product_image_03.png" alt="Cameras, Audio & Video"></a>
+          <!-- Información del producto -->
+          <a href="#">Cameras, Audio & Video</a>
+          <h3><a href="#">3D Stereo Wireless Earphone For Laptop</a></h3>
+          <span class="old-price">$140</span>
+          <span>$90</span>
+        </article>
+        <article>
+          <!-- Imagen del producto -->
+          <a href="#"><img src="images/watches/product_image_04.png" alt="Watches"></a>
+          <!-- Información del producto -->
+          <a href="#">Watches</a>
+          <h3><a href="#">Smart Watches With Heart Beat And ECG</a></h3>
+          <span>$755</span>
+        </article>
+        <article>
+          <!-- Imagen del producto -->
+          <a href="#"><img src="images/home_appliances/product_image_05.png" alt="Home Applainces"></a>
+          <!-- Información del producto -->
+          <a href="#">Home Applainces</a>
+          <h3><a href="#">Branded Electric Steam Irons For Cloth</a></h3>
+          <span class="old-price">$120</span>
+          <span>$85</span>
+        </article>
+        <article>
+          <!-- Imagen del producto -->
+          <a href="#"><img src="images/kitchen_appliances/product_image_06.png" alt="Kitchen Applainces"></a>
+          <!-- Información del producto -->
+          <a href="#">Kitchen Applainces</a>
+          <h3><a href="#">Mini Triangle Sandwich Maker For Delicious Sandwich</a></h3>
+          <span>$85</span>
+        </article>
+        <article>
+          <!-- Imagen del producto -->
+          <a href="#"><img src="images/videogames/product_image_07.png" alt="Music and Video Games"></a>
+          <!-- Información del producto -->
+          <a href="#">Music and Video Games</a>
+          <h3><a href="#">Gaming Headset Deep Bass For Laptop</a></h3>
+          <span class="old-price">$120</span>
+          <span>$80</span>
+        </article>
+        <article>
+          <!-- Imagen del producto -->
+          <a href="#"><img src="images/touch_screen/product_image_08.png" alt="LCD"></a>
+          <!-- Información del producto -->
+          <a href="#">LCD</a>
+          <h3><a href="#">Slim LCD Touch Screen With High Quality Resolution</a></h3>
+          <span>$1100</span>
+        </article>
+      </div>
+    </section>
+    <!-- Productos populares-->
+    <!-- Sección de categorías de accesorios -->
+    <section class="category-accesory">
+      <div class="content-category">
+        <article>
+          <!-- Imagen de la categoría -->
+          <div class="img-product">
+            <a href="#"><img src="images/videogames/category_image_6.png" alt="..."></a>
+          </div>
+          <!-- Información -->
+          <div class="info-product">
+            <h3>Game Accessories</h3>
+            <button>SHOP KNOW</button>
+          </div>
+        </article>
+        <article>
+          <!-- Imagen de la categoría -->
+          <div class="img-product">
+            <a href="#"><img src="images/audio_and_video/category_image_3.png" alt="..."></a>
+          </div>
+          <!-- Información -->
+          <div class="info-product">
+            <h3>Multimedia Devices</h3>
+            <button>SHOP KNOW</button>
+          </div>
+        </article>
+        <article>
+          <!-- Imagen de la categoría -->
+          <div class="img-product">
+            <a href="#"><img src="images/computers/category_image_2.png" alt="..."></a>
+          </div>
+          <!-- Información -->
+          <div class="info-product">
+            <h3>Computers Accessories</h3>
+            <button>SHOP KNOW</button>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Sección de categorías de accesorios -->
+    <!-- Sección para paquetes de productos -->
+    <section
+      style="background-image: url(./images/backgrounds/full_screen.png); background-repeat: no-repeat; background-position: center; background-size: 100%; width: 100%; height: 550px;">
+
+      <h2>The Perfect Match</h2>
+      <p>Vitae posuere urna blandit sed. Praesent ut dignissim risus.</p>
+      
+        <video width="320" height="240" controls>
+          <source src="video/katora_commercial.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      
+
+      <button>SHOP KNOW</button>
+
+    </section>
+    <!-- Sección de categorias de accesorios -->
+
+    <!-- Ofertas especiales -->
+    <section class="section-container-6">
+      <div class="section-tittle">
+        <h2>Special Offers</h2>
+        <p>Morbi venenatis felis tempus feugiat maximus.</p>
+      </div>
+      <div class="carousel-2">
+        <div class="carousel-inner-2">
+          <input class="carousel-open-2" type="radio" id="carousel-1-2" name="carousel-2" aria-hidden="true" hidden=""
+            checked="checked">
+          <div class="carousel-item-2">
+            <!-- aqui van los productos -->
+            <article>
+              <div class="product"
+                style="background-image: url(./images/mobiles_and_tablets/product_image_01.png); background-size: cover;">
+                <div class="limit-time">
+                  <div>
+                    <span>362</span>
+                    <span>Days</span>
+                  </div>
+                  <div>
+                    <span>7</span>
+                    <span>Hour</span>
+                  </div>
+                  <div>
+                    <span>23</span>
+                    <span>Min</span>
+                  </div>
+                  <div>
+                    <span>51</span>
+                    <span>Sec</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Información del artículo -->
+              <div class="info-product">
+                <span>RING COLLECTION</span>
+                <h3><a href="#">Austrian Crystals Jewelry Engagement Ring</a></h3>
+                <div>
+                  <button type="button">ADD TO CART</button>
+                  <div class="prices">
+                    <span>$285</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="product"
+                style="background-image: url(./images/computers/product_image_02.png); background-size: cover;">
+                <div class="limit-time">
+                  <div>
+                    <span>362</span>
+                    <span>Days</span>
+                  </div>
+                  <div>
+                    <span>7</span>
+                    <span>Hour</span>
+                  </div>
+                  <div>
+                    <span>23</span>
+                    <span>Min</span>
+                  </div>
+                  <div>
+                    <span>51</span>
+                    <span>Sec</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Información del artículo -->
+              <div class="info-product">
+                <span>EARNINGS</span>
+                <h3><a href="#">Crystal Water Drop Wedding Function Earnings</a></h3>
+                <div>
+                  <button type="button">ADD TO CART</button>
+                  <div class="prices">
+                    <span>$450</span>
+                    <span>$285</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="product"
+                style="background-image: url(./images/audio_and_video/product_image_03.png); background-size: cover;">
+                <div class="limit-time">
+                  <div>
+                    <span>362</span>
+                    <span>Days</span>
+                  </div>
+                  <div>
+                    <span>7</span>
+                    <span>Hour</span>
+                  </div>
+                  <div>
+                    <span>23</span>
+                    <span>Min</span>
+                  </div>
+                  <div>
+                    <span>51</span>
+                    <span>Sec</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Información del artículo -->
+              <div class="info-product">
+                <span>RING COLLECTION</span>
+                <h3><a href="#">Crystal Wedding Function Rings</a></h3>
+                <div>
+                  <button type="button">ADD TO CART</button>
+                  <div class="prices">
+                    <span>$120</span>
+                    <span>$85</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="product"
+                style="background-image: url(./images/watches/product_image_04.png); background-size: cover;">
+                <div class="limit-time">
+                  <div>
+                    <span>362</span>
+                    <span>Days</span>
+                  </div>
+                  <div>
+                    <span>7</span>
+                    <span>Hour</span>
+                  </div>
+                  <div>
+                    <span>23</span>
+                    <span>Min</span>
+                  </div>
+                  <div>
+                    <span>51</span>
+                    <span>Sec</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Información del artículo -->
+              <div class="info-product">
+                <span>RING</span>
+                <h3><a href="#">Women Crystal Zircon Engagement And Wedding Ring</a></h3>
+                <div>
+                  <button type="button">ADD TO CART</button>
+                  <div class="prices">
+                    <span>$120</span>
+                    <span>$110</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <input class="carousel-open-2" type="radio" id="carousel-2-2" name="carousel-2" aria-hidden="true" hidden="">
+          <div class="carousel-item-2">
+            <article>
+              <div class="product"
+                style="background-image: url(./images/home_appliances/product_image_05.png); background-size: cover;">
+                <div class="limit-time">
+                  <div>
+                    <span>362</span>
+                    <span>Days</span>
+                  </div>
+                  <div>
+                    <span>7</span>
+                    <span>Hour</span>
+                  </div>
+                  <div>
+                    <span>23</span>
+                    <span>Min</span>
+                  </div>
+                  <div>
+                    <span>51</span>
+                    <span>Sec</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Información del artículo -->
+              <div class="info-product">
+                <span>BANGLE</span>
+                <h3><a href="#">Viennois Rose Gold Circle Bangle for Wedding</a></h3>
+                <div>
+                  <button type="button">ADD TO CART</button>
+                  <div class="prices">
+                    <span>$220</span>
+                    <span>$185</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="product"
+                style="background-image: url(./images/kitchen_appliances/product_image_06.png); background-size: cover;">
+                <div class="limit-time">
+                  <div>
+                    <span>362</span>
+                    <span>Days</span>
+                  </div>
+                  <div>
+                    <span>7</span>
+                    <span>Hour</span>
+                  </div>
+                  <div>
+                    <span>23</span>
+                    <span>Min</span>
+                  </div>
+                  <div>
+                    <span>51</span>
+                    <span>Sec</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Información del artículo -->
+              <div class="info-product">
+                <span>BRACELET</span>
+                <h3><a href="#">Bracelet for Women Metal Chain for Engagement</a></h3>
+                <div>
+                  <button type="button">ADD TO CART</button>
+                  <div class="prices">
+                    <span>$140</span>
+                    <span>$81</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <ol class="carousel-indicators-2">
+            <li>
+              <label for="carousel-1-2" class="carousel-bullet-2">
+                <div class="carousel-bullet-1-2"></div>
+              </label>
+            </li>
+            <li>
+              <label for="carousel-2-2" class="carousel-bullet-2">
+                <div class="carousel-bullet-2-2"></div>
+              </label>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- Elementos que pertencen al carrusel -->
+    </section>
+    <!-- Ofertas especiales -->
+
+    <!-- Categoría paquetes de productos -->
+    <section
+      style="background-image: url(./images/backgrounds/full_screen_2.png); background-repeat: no-repeat; background-position: center; background-size: 100%; width: 100%; height: 550px;">
+
+      <h2>The Perfect Match</h2>
+      <p>Vitae posuere urna blandit sed. Praesent ut dignissim risus.</p>
+
+
+      <iframe width="320" height="240" src="https://www.youtube.com/embed/LFdZgE3sDqs" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+
+      <button>SHOP KNOW</button>
+
+    </section>
+    <!-- Categoría paquetes de productos -->
+
+    <!-- Categorías -->
+    <section class="section-container-8">
+      <div class="section-tittle">
+        <h2>Popular Categories</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="carousel-3">
+        <div class="carousel-inner-3">
+          <input class="carousel-open-3" type="radio" id="carousel-1-3" name="carousel-3" aria-hidden="true" hidden=""
+            checked="checked">
+          <div class="carousel-item-3">
+            <!-- aqui van los productos -->
+            <article class="product-category">
+              <a href="#"><img src="images/mobiles_and_tablets/category_image_1.png" alt="..."></a>
+              <!-- Información de la categoría-->
+              <div class="categories">
+                <h3><a href="#">Mobiles and Tablets</a></h3>
+                <!-- Navegación en la categoría -->
+                <nav>
+                  <ul>
+                    <li><a href="#">Apple</a></li>
+                    <li><a href="#">Samsung</a></li>
+                    <li><a href="#">PowerBank</a></li>
+                    <li><a href="">See all categories</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </article>
+            <!-- Categorias del carrusel -->
+            <article class="product-category">
+              <a href="#"><img src="images/computers/category_image_2.png" alt="..."></a>
+              <!-- Información de la categoría-->
+              <div class="categories">
+                <h3><a href="#">Computers & Accessories</a></h3>
+                <!-- Navegación en la categoría -->
+                <nav>
+                  <ul>
+                    <li><a href="#">Computers</a></li>
+                    <li><a href="#">Laptops</a></li>
+                    <li><a href="#">Monitors</a></li>
+                    <li><a href="">See all categories</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </article>
+            <!-- Categorias del carrusel -->
+            <article class="product-category">
+              <a href="#"><img src="images/audio_and_video/category_image_3.png" alt="..."></a>
+              <div class="categories">
+                <h3><a href="#">Cameras, Audio & Video</a></h3>
+                <nav>
+                  <ul>
+                    <li><a href="#">Audio</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">Headphones</a></li>
+                    <li><a href="">See all categories</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </article>
+            <!-- Categorias del carrusel -->
+            <article class="product-category">
+              <a href="#"><img src="images/home_appliances/category_image_4.png" alt="..."></a>
+              <!-- Información de la categoría-->
+              <div class="categories">
+                <h3><a href="#">Home appliances</a></h3>
+                <!-- Navegación en la categoría -->
+                <nav>
+                  <ul>
+                    <li><a href="#">TV Accessories</a></li>
+                    <li><a href="#">Air Conditioner</a></li>
+                    <li><a href="#">Dryer</a></li>
+                    <li><a href="">See all categories</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </article>
+            <!-- Categorias del carrusel -->
+            <article class="product-category">
+              <a href="#"><img src="images/kitchen_appliances/category_image_5.png" alt="..."></a>
+              <!-- Información de la categoría-->
+              <div class="categories">
+                <h3><a href="#">Kitchen Appliances</a></h3>
+                <!-- Navegación en la categoría -->
+                <nav>
+                  <ul>
+                    <li><a href="#">Bakeware</a></li>
+                    <li><a href="#">Cookware</a></li>
+                    <li><a href="#">Gas Stoves</a></li>
+                    <li><a href="">See all categories</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </article>
+          </div>
+          <input class="carousel-open-3" type="radio" id="carousel-2-3" name="carousel-3" aria-hidden="true" hidden="">
+          <div class="carousel-item-3">
+            <article class="product-category">
+              <a href="#"><img src="images/videogames/category_image_6.png" alt="..."></a>
+              <!-- Información de la categoría-->
+              <div class="categories">
+                <h3><a href="#">Music and video games</a></h3>
+                <!-- Navegación en la categoría -->
+                <nav>
+                  <ul>
+                    <li><a href="#">TV & Video Devices </a></li>
+                    <li><a href="#">TV Accessories</a></li>
+                    <li><a href="#">Air Conditioner </a></li>
+                    <li><a href="">See all categories</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </article>
+          </div>
+          <ol class="carousel-indicators-3">
+            <li>
+              <label for="carousel-1-3" class="carousel-bullet-3">
+                <div class="carousel-bullet-1-3"></div>
+              </label>
+            </li>
+            <li>
+              <label for="carousel-2-3" class="carousel-bullet-3">
+                <div class="carousel-bullet-2-3"></div>
+              </label>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!-- Categorías -->
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div class="info-contact">
+      <div class="content-info-contact">
+        <!-- Sections info contact -->
+        <section>
+          <!-- info contact -->
+          <h2>Store</h2>
+          <a href="contacts.html" class="logo"><img src="images/logos/logo.png" alt="logotipe"></a>
+          <div class="content">
+            <address>1223, Main Street, Anytown New York, 38000 USA</address>
+            <span>888 - 963 - 600</span>
+            <span><a href="#">info@example.com</a> </span>
+          </div>
+        </section>
+        <section>
+          <!-- info contact -->
+          <h2>Info</h2>
+          <nav class="content">
+            <ul>
+              <li> <a href="#">Home</a> </li>
+              <li> <a href="#">Blog</a> </li>
+              <li> <a href="#">About Us</a> </li>
+              <li> <a href="#">Contact Us</a> </li>
+            </ul>
+          </nav>
+        </section>
+        <section>
+          <!-- info contact -->
+          <h2>Our Polices</h2>
+          <nav class="content">
+            <ul>
+              <li> <a href="#">FAQs</a> </li>
+              <li> <a href="#">Privacy Policy</a> </li>
+              <li> <a href="#">Refund Policy</a> </li>
+              <li> <a href="#">Terms of Service</a> </li>
+            </ul>
+          </nav>
+        </section>
+        <section>
+          <!-- info contact -->
+          <h2>My Account</h2>
+          <nav class="content">
+            <ul>
+              <li> <a href="#">Shop</a> </li>
+              <li> <a href="#">Orders</a> </li>
+              <li> <a href="#">Shopping Cart</a> </li>
+              <li> <a href="#">Wishlist</a> </li>
+            </ul>
+          </nav>
+        </section>
+        <section>
+          <!-- info contact -->
+          <h2>Newsletter</h2>
+          <form>
+            <input type="search" placeholder="Your Email ...">
+            <button type="submit">
+              <i class="fa fa-location-arrow" aria-hidden="true"></i>
+            </button>
+          </form>
+          <div class="content">
+            <p>By entering your email, you agree to our Terms of Service and Privacy Policy.</p>
+            <article>
+              <h3>Follow Us</h3>
+              <div class="social-media">
+                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- Info Copyright -->
+    <div class="info-copyright">
+      <section>
+        <!--  Autor, copyright, year -->
+        <p class="info-copyright">© 2019 Company, Inc. Privacy • Terms</p>
+      </section>
+    </div>
+  </footer>
+  <!-- Footer-->
+</body>
+
+</html>
