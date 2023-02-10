@@ -62,7 +62,7 @@ body {
     --gray: #6c757d;
     --gray-dark: #343a40;
     --primary: #333;
-    --secondary: #b38741;
+    --secondary: #6C5328;
     --success: #28a745;
     --info: #479af1;
     --warning: #ffc107;
@@ -90,7 +90,7 @@ body {
     --gray: #6c757d;
     --gray-dark: #343a40;
     --primary: #333;
-    --secondary: #b38741;
+    --secondary: #6C5328;
     --success: #28a745;
     --info: #479af1;
     --warning: #ffc107;
@@ -99,6 +99,14 @@ body {
     --dark: #141414;
     --font-family-sans-serif: "Montserrat", sans-serif;
   }
+}
+
+/* Iframe */
+
+iframe{
+  width:320px;
+  height:240px;
+  
 }
 
 /*Fonts*/
@@ -164,7 +172,7 @@ header .row-upper select,
 main section:nth-child(3) .grid article h3 a,
 main section:nth-child(4) .info-product,
 footer {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 header .row-lower select,
@@ -174,7 +182,7 @@ main section:nth-child(5) button,
 main section:nth-child(7) button,
 .carrousel-tittle button,
 article .info-product div button {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 /*weight*/
@@ -219,13 +227,22 @@ main section:nth-child(3) .grid article .old-price,
 main section:nth-child(6) .prices span:nth-child(1) {
   font-weight: 600;
 }
+header .row-upper span{
+  font-weight: bolder;
+}
 
-header .row-upper a,
+.info-number{
+  text-decoration: underline;
+}
+
+a:hover, button:hover {
+  cursor: pointer;
+}
+
 header .row-lower select {
   font-weight: 400;
 }
 
-header .row-upper span,
 header .row-upper select,
 main section:nth-child(2) article div p,
 .section-tittle p,
@@ -236,7 +253,7 @@ main section:nth-child(3) .grid article a,
 article .info-product span,
 .carousel-item-3 .product-category .categories nav,
 footer {
-  font-weight: 300;
+  font-weight: 600;
 }
 
 /* Text stuff*/
@@ -299,10 +316,12 @@ article .info-product div span {
 
 }
 
+.info-number,
 main section:nth-child(3) .grid article .old-price,
 main section:nth-child(6) .prices span:nth-child(1) {
   color: var(--dark);
 }
+
 
 /*backgrounds*/
 

@@ -39,11 +39,11 @@
   <!-- Cabecera -->
   <header style="position:sticky; top: 0; z-index: 12;">
     <!--Alert info-->
-    <div class="alert-info">
+    <div class="alert-info" aria-label=" alert content">
       <!-- Content alert info -->
       <div>
-        <p>Get<span> UPTO 40% OFF </span>on your 1st order
-          <a href="#">
+        <p>Get<span> <a href="#main-products" aria-label="Link to the principal section"> UPTO 40% OFF </a> </span>on your 1st order
+          <a>
             More details
           </a>
         </p>
@@ -58,7 +58,7 @@
       <!-- Content row upper -->
       <div class="content-row-upper">
         <div>
-          <span>Call us: <a href="#"> 888 - 963 - 600 </a></span>
+          <span>Call us: <a class="info-number" href="tel:888963600"> 888 - 963 - 600 </a></span>
         </div>
         <div>
 
@@ -67,15 +67,16 @@
             <source src="audio/pista-katora.mp3" type="audio/mpeg">
           </audio>
 
-          <select name="...">
+          <select name="..." aria-label="My Account" title="My Account">
             <option value="">My Account</option>
           </select>
-          <select name="...">
+          <select name="..." aria-label="Language" title="Language">
             <option value="">English</option>
           </select>
-          <select name="...">
+          <select name="..." aria-label="Currency" title="Currency">
             <option value="">USD</option>
           </select>
+
         </div>
       </div>
     </div>
@@ -90,62 +91,63 @@
           </h1>
         </div>
         <!-- Bar navegation -->
-        <nav>
-          <ul>
+        <nav aria-label="Main Navigation">
+          <ul aria-label=" nav content">
             <li>
-              <a href="index.hmtl">
-                <select name="...">
-                  <option value="">HOME</option>
+              <a href="index.html">
+                <select name="home-menu" aria-label="Home">
+                  <option value="">Home</option>
                 </select>
               </a>
             </li>
             <li>
               <a href="gallery.html">
-                <select name="...">
-                  <option value="">MEGA MENU</option>
+                <select name="mega-menu" aria-label="Mega Menu">
+                  <option value="">Gallery</option>
                 </select>
               </a>
             </li>
             <li>
-              <a href="details.html">
-                <select name="...">
-                  <option value="">SHOP</option>
+              <a href="about-us.html">
+                <select name="about-us-menu" aria-label="About Us">
+                  <option value="">About Us</option>
                 </select>
               </a>
             </li>
             <li>
-              <a href="list.html">
-                <select name="...">
-                  <option value="">PRODUCT</option>
+              <a href="services.html">
+                <select name="services-menu" aria-label="Services">
+                  <option value="">Services</option>
                 </select>
               </a>
             </li>
             <li>
-              <a href="map.html">
-                <select name="...">
-                  <option value="">PAGES</option>
+              <a href="contact.html">
+                <select name="contact-menu" aria-label="Contact">
+                  <option value="">Contact</option>
                 </select>
               </a>
             </li>
           </ul>
         </nav>
-        <!-- Tools right -->
-        <div class="options-right">
-          <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-        </div>
+      </div>
+
+      <!-- Tools right -->
+      <div class="options-right">
+        <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
       </div>
     </div>
   </header>
+
   <!-- Cabecera -->
   <main>
     <!-- Contenedor del carrusel -->
     <section class="section-container">
       <div class="carousel">
         <div class="carousel-inner">
-          <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
-            checked="checked">
+          <input class="carousel-open" type="radio" id="carousel-1" name="carousel" hidden checked="checked">
           <div class="carousel-item"
             style="background-image: url(./images/sliders/Slider_01_02.png); background-size: cover;">
             <div class="carrousel-tittle">
@@ -155,7 +157,7 @@
               <button>SHOP KNOW</button>
             </div>
           </div>
-          <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+          <input class="carousel-open" type="radio" id="carousel-2" name="carousel" hidden>
           <div class="carousel-item"
             style="background-image: url(./images/sliders/Slider_01_01.png); background-size: cover;">
             <div class="carrousel-tittle">
@@ -165,7 +167,7 @@
               <button>SHOP KNOW</button>
             </div>
           </div>
-          <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+          <input class="carousel-open" type="radio" id="carousel-3" name="carousel" hidden>
           <div class="carousel-item"
             style="background-image: url(./images/sliders/Slider_01_03.png); background-size: cover;">
             <div class="carrousel-tittle">
@@ -177,17 +179,20 @@
           </div>
           <ol class="carousel-indicators">
             <li>
-              <label for="carousel-1" class="carousel-bullet">
+              <label for="carousel-1" class="carousel-bullet" aria-labelledby="bullet-1">
+                <span id="bullet-1" hidden>bullet</span>
                 <div class="carousel-bullet-1"></div>
               </label>
             </li>
             <li>
-              <label for="carousel-2" class="carousel-bullet">
+              <label for="carousel-2" class="carousel-bullet" aria-labelledby="bullet-2">
+                <span id="bullet-2" hidden>bullet</span>
                 <div class="carousel-bullet-2"></div>
               </label>
             </li>
             <li>
-              <label for="carousel-3" class="carousel-bullet">
+              <label for="carousel-3" class="carousel-bullet" aria-labelledby="bullet-3">
+                <span id="bullet-3" hidden>bullet</span>
                 <div class="carousel-bullet-3"></div>
               </label>
             </li>
@@ -198,30 +203,30 @@
     </section>
     <!-- Contenedor del carrusel -->
     <!-- Información de servicios -->
-    <section>
+    <section id="main-products">
       <h2 style="display:none;">Service information</h2>
-      <article>
+      <article aria-label="Shipping article">
         <a href="#"><i class="fa fa-truck  fa-flip-horizontal" aria-hidden="true"></i></a>
         <div>
           <h3>Free Shipping</h3>
           <p>We provide free shipping for all order over $200.00</p>
         </div>
       </article>
-      <article>
+      <article aria-label="Support article">
         <a href="#"><i class="fa fa-life-ring" aria-hidden="true"></i></a>
         <div>
           <h3>Support 24/7</h3>
           <p>We provide support to our customers 24 hours.</p>
         </div>
       </article>
-      <article>
+      <article aria-label="Payment article">
         <a href="#"><i class="fa fa-credit-card-alt" aria-hidden="true"></i></a>
         <div>
           <h3>Safe Payment</h3>
           <p>We provide always safe payment methods.</p>
         </div>
       </article>
-      <article>
+      <article aria-label="Returns article">
         <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
         <div>
           <h3>Returns</h3>
@@ -238,70 +243,70 @@
       </div>
       <!-- sección de elementos con distintos artículos relacionados -->
       <div class="grid">
-        <article>
+        <article aria-label="Mobiles and Tablets article">
           <!-- Imagen del producto -->
-          <a href="#"><img src="images/mobiles_and_tablets/product_image_01.png" alt="Mobiles and Tablets"></a>
+          <img src="images/mobiles_and_tablets/product_image_01.png" alt="Mobiles and Tablets">
           <!-- Información del producto -->
           <a href="#">Mobiles and Tablets</a>
           <h3><a href="#">Original Samsung Galaxy S8 Plus</a></h3>
           <span class="old-price">$999</span>
           <span>$900</span>
         </article>
-        <article>
+        <article aria-label="Computers & Accessories article">
           <!-- Imagen del producto -->
-          <a href="#"><img src="images/computers/product_image_02.png" alt="Computers & Accessories"></a>
+          <img src="images/computers/product_image_02.png" alt="Computers & Accessories">
           <!-- Información del producto -->
           <a href="#">Computers & Accessories</a>
           <h3><a href="#">15-6inch Gaming Notebook Laptop</a></h3>
           <span class="old-price">$2120</span>
           <span>$1185</span>
         </article>
-        <article>
+        <article aria-label="3D Stereo Wireless Earphone For Laptop article">
           <!-- Imagen del producto -->
-          <a href="#"><img src="images/audio_and_video/product_image_03.png" alt="Cameras, Audio & Video"></a>
+          <img src="images/audio_and_video/product_image_03.png" alt="Cameras, Audio & Video">
           <!-- Información del producto -->
           <a href="#">Cameras, Audio & Video</a>
           <h3><a href="#">3D Stereo Wireless Earphone For Laptop</a></h3>
           <span class="old-price">$140</span>
           <span>$90</span>
         </article>
-        <article>
+        <article aria-label="Smart Watches With Heart Beat And ECG article">
           <!-- Imagen del producto -->
-          <a href="#"><img src="images/watches/product_image_04.png" alt="Watches"></a>
+          <img src="images/watches/product_image_04.png" alt="Watches">
           <!-- Información del producto -->
           <a href="#">Watches</a>
           <h3><a href="#">Smart Watches With Heart Beat And ECG</a></h3>
           <span>$755</span>
         </article>
-        <article>
+        <article aria-label="Branded Electric Steam Irons For Cloth article">
           <!-- Imagen del producto -->
-          <a href="#"><img src="images/home_appliances/product_image_05.png" alt="Home Applainces"></a>
+          <img src="images/home_appliances/product_image_05.png" alt="Home Applainces">
           <!-- Información del producto -->
           <a href="#">Home Applainces</a>
           <h3><a href="#">Branded Electric Steam Irons For Cloth</a></h3>
           <span class="old-price">$120</span>
           <span>$85</span>
         </article>
-        <article>
+        <article aria-label="Kitchen Applainces article">
           <!-- Imagen del producto -->
-          <a href="#"><img src="images/kitchen_appliances/product_image_06.png" alt="Kitchen Applainces"></a>
+          <img src="images/kitchen_appliances/product_image_06.png" alt="Kitchen Applainces">
           <!-- Información del producto -->
           <a href="#">Kitchen Applainces</a>
           <h3><a href="#">Mini Triangle Sandwich Maker For Delicious Sandwich</a></h3>
           <span>$85</span>
         </article>
-        <article>
+        <article aria-label="Music and Video Games article">
           <!-- Imagen del producto -->
-          <a href="#"><img src="images/videogames/product_image_07.png" alt="Music and Video Games"></a>
+          <img src="images/videogames/product_image_07.png" alt="Music and Video Games">
           <!-- Información del producto -->
           <a href="#">Music and Video Games</a>
           <h3><a href="#">Gaming Headset Deep Bass For Laptop</a></h3>
           <span class="old-price">$120</span>
           <span>$80</span>
         </article>
-        <article>
+        <article aria-label="LCD article">
           <!-- Imagen del producto -->
-          <a href="#"><img src="images/touch_screen/product_image_08.png" alt="LCD"></a>
+          <img src="images/touch_screen/product_image_08.png" alt="LCD">
           <!-- Información del producto -->
           <a href="#">LCD</a>
           <h3><a href="#">Slim LCD Touch Screen With High Quality Resolution</a></h3>
@@ -313,7 +318,7 @@
     <!-- Sección de categorías de accesorios -->
     <section class="category-accesory">
       <div class="content-category">
-        <article>
+        <article aria-label="Game Accessories article">
           <!-- Imagen de la categoría -->
           <div class="img-product">
             <a href="#"><img src="images/videogames/category_image_6.png" alt="..."></a>
@@ -324,7 +329,7 @@
             <button>SHOP KNOW</button>
           </div>
         </article>
-        <article>
+        <article aria-label="Multimedia Devices article">
           <!-- Imagen de la categoría -->
           <div class="img-product">
             <a href="#"><img src="images/audio_and_video/category_image_3.png" alt="..."></a>
@@ -335,7 +340,7 @@
             <button>SHOP KNOW</button>
           </div>
         </article>
-        <article>
+        <article aria-label="Computers Accessories article">
           <!-- Imagen de la categoría -->
           <div class="img-product">
             <a href="#"><img src="images/computers/category_image_2.png" alt="..."></a>
@@ -355,12 +360,12 @@
 
       <h2>The Perfect Match</h2>
       <p>Vitae posuere urna blandit sed. Praesent ut dignissim risus.</p>
-      
-        <video width="320" height="240" controls>
-          <source src="video/katora_commercial.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      
+
+      <video width="320" height="240" controls>
+        <source src="video/katora_commercial.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
 
       <button>SHOP KNOW</button>
 
@@ -375,11 +380,10 @@
       </div>
       <div class="carousel-2">
         <div class="carousel-inner-2">
-          <input class="carousel-open-2" type="radio" id="carousel-1-2" name="carousel-2" aria-hidden="true" hidden=""
-            checked="checked">
+          <input class="carousel-open-2" type="radio" id="carousel-1-2" name="carousel-2" hidden checked="checked">
           <div class="carousel-item-2">
             <!-- aqui van los productos -->
-            <article>
+            <article aria-label="Mobiles article">
               <div class="product"
                 style="background-image: url(./images/mobiles_and_tablets/product_image_01.png); background-size: cover;">
                 <div class="limit-time">
@@ -413,7 +417,7 @@
                 </div>
               </div>
             </article>
-            <article>
+            <article aria-label="Computers article">
               <div class="product"
                 style="background-image: url(./images/computers/product_image_02.png); background-size: cover;">
                 <div class="limit-time">
@@ -448,7 +452,7 @@
                 </div>
               </div>
             </article>
-            <article>
+            <article aria-label="Audios and video article">
               <div class="product"
                 style="background-image: url(./images/audio_and_video/product_image_03.png); background-size: cover;">
                 <div class="limit-time">
@@ -483,7 +487,7 @@
                 </div>
               </div>
             </article>
-            <article>
+            <article aria-label="Watches article">
               <div class="product"
                 style="background-image: url(./images/watches/product_image_04.png); background-size: cover;">
                 <div class="limit-time">
@@ -519,9 +523,9 @@
               </div>
             </article>
           </div>
-          <input class="carousel-open-2" type="radio" id="carousel-2-2" name="carousel-2" aria-hidden="true" hidden="">
+          <input class="carousel-open-2" type="radio" id="carousel-2-2" name="carousel-2" hidden>
           <div class="carousel-item-2">
-            <article>
+            <article aria-label="Home appliances article">
               <div class="product"
                 style="background-image: url(./images/home_appliances/product_image_05.png); background-size: cover;">
                 <div class="limit-time">
@@ -556,7 +560,7 @@
                 </div>
               </div>
             </article>
-            <article>
+            <article aria-label="Kitchen article">
               <div class="product"
                 style="background-image: url(./images/kitchen_appliances/product_image_06.png); background-size: cover;">
                 <div class="limit-time">
@@ -594,12 +598,14 @@
           </div>
           <ol class="carousel-indicators-2">
             <li>
-              <label for="carousel-1-2" class="carousel-bullet-2">
+              <label for="carousel-1-2" class="carousel-bullet-2" aria-labelledby="bullet-1-2">
+                <span id="bullet-1-2" hidden>bullet</span>
                 <div class="carousel-bullet-1-2"></div>
               </label>
             </li>
             <li>
-              <label for="carousel-2-2" class="carousel-bullet-2">
+              <label for="carousel-2-2" class="carousel-bullet-2" aria-labelledby="bullet-2-2">
+                <span id="bullet-2-2" hidden>bullet</span>
                 <div class="carousel-bullet-2-2"></div>
               </label>
             </li>
@@ -618,8 +624,7 @@
       <p>Vitae posuere urna blandit sed. Praesent ut dignissim risus.</p>
 
 
-      <iframe width="320" height="240" src="https://www.youtube.com/embed/LFdZgE3sDqs" title="YouTube video player"
-        frameborder="0"
+      <iframe src="https://www.youtube.com/embed/LFdZgE3sDqs" title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen>
       </iframe>
@@ -638,17 +643,16 @@
       </div>
       <div class="carousel-3">
         <div class="carousel-inner-3">
-          <input class="carousel-open-3" type="radio" id="carousel-1-3" name="carousel-3" aria-hidden="true" hidden=""
-            checked="checked">
+          <input class="carousel-open-3" type="radio" id="carousel-1-3" name="carousel-3" hidden checked="checked">
           <div class="carousel-item-3">
             <!-- aqui van los productos -->
-            <article class="product-category">
+            <article class="product-category" aria-label="Mobiles and tablets article">
               <a href="#"><img src="images/mobiles_and_tablets/category_image_1.png" alt="..."></a>
               <!-- Información de la categoría-->
               <div class="categories">
                 <h3><a href="#">Mobiles and Tablets</a></h3>
                 <!-- Navegación en la categoría -->
-                <nav>
+                <nav aria-label="telephone Navigation">
                   <ul>
                     <li><a href="#">Apple</a></li>
                     <li><a href="#">Samsung</a></li>
@@ -659,13 +663,13 @@
               </div>
             </article>
             <!-- Categorias del carrusel -->
-            <article class="product-category">
+            <article class="product-category" aria-label="Computers and accesories article">
               <a href="#"><img src="images/computers/category_image_2.png" alt="..."></a>
               <!-- Información de la categoría-->
               <div class="categories">
                 <h3><a href="#">Computers & Accessories</a></h3>
                 <!-- Navegación en la categoría -->
-                <nav>
+                <nav aria-label="Computers Navigation">
                   <ul>
                     <li><a href="#">Computers</a></li>
                     <li><a href="#">Laptops</a></li>
@@ -676,11 +680,11 @@
               </div>
             </article>
             <!-- Categorias del carrusel -->
-            <article class="product-category">
+            <article class="product-category" aria-label="Video and audio article">
               <a href="#"><img src="images/audio_and_video/category_image_3.png" alt="..."></a>
               <div class="categories">
                 <h3><a href="#">Cameras, Audio & Video</a></h3>
-                <nav>
+                <nav aria-label="Audio Navigation">
                   <ul>
                     <li><a href="#">Audio</a></li>
                     <li><a href="#">Video</a></li>
@@ -691,13 +695,13 @@
               </div>
             </article>
             <!-- Categorias del carrusel -->
-            <article class="product-category">
+            <article class="product-category" aria-label=" Homes stuffs article">
               <a href="#"><img src="images/home_appliances/category_image_4.png" alt="..."></a>
               <!-- Información de la categoría-->
               <div class="categories">
                 <h3><a href="#">Home appliances</a></h3>
                 <!-- Navegación en la categoría -->
-                <nav>
+                <nav aria-label="TV Navigation">
                   <ul>
                     <li><a href="#">TV Accessories</a></li>
                     <li><a href="#">Air Conditioner</a></li>
@@ -708,13 +712,13 @@
               </div>
             </article>
             <!-- Categorias del carrusel -->
-            <article class="product-category">
+            <article class="product-category" aria-label="Kitchen stuffs article">
               <a href="#"><img src="images/kitchen_appliances/category_image_5.png" alt="..."></a>
               <!-- Información de la categoría-->
               <div class="categories">
                 <h3><a href="#">Kitchen Appliances</a></h3>
                 <!-- Navegación en la categoría -->
-                <nav>
+                <nav aria-label="Kitchen Navigation">
                   <ul>
                     <li><a href="#">Bakeware</a></li>
                     <li><a href="#">Cookware</a></li>
@@ -725,33 +729,37 @@
               </div>
             </article>
           </div>
-          <input class="carousel-open-3" type="radio" id="carousel-2-3" name="carousel-3" aria-hidden="true" hidden="">
+          <input class="carousel-open-3" type="radio" id="carousel-2-3" name="carousel-3" hidden>
           <div class="carousel-item-3">
-            <article class="product-category">
+            <article class="product-category" aria-label="article">
               <a href="#"><img src="images/videogames/category_image_6.png" alt="..."></a>
               <!-- Información de la categoría-->
               <div class="categories">
                 <h3><a href="#">Music and video games</a></h3>
-                <!-- Navegación en la categoría -->
-                <nav>
-                  <ul>
-                    <li><a href="#">TV & Video Devices </a></li>
-                    <li><a href="#">TV Accessories</a></li>
-                    <li><a href="#">Air Conditioner </a></li>
-                    <li><a href="">See all categories</a></li>
+                <nav aria-label="Music Navigation">
+                  <ul aria-roledescription="navegacion">
+                    <li><a href="#" aria-label="Enlace a la página de dispositivos de TV y video">TV & Video Devices
+                      </a></li>
+                    <li><a href="#" aria-label="Enlace a la página de accesorios de TV">TV Accessories</a></li>
+                    <li><a href="#" aria-label="Enlace a la página de aire acondicionado">Air Conditioner </a></li>
+                    <li><a href="" aria-label="Enlace a la página que muestra todas las categorías">See all
+                        categories</a></li>
                   </ul>
                 </nav>
+
               </div>
             </article>
           </div>
           <ol class="carousel-indicators-3">
             <li>
-              <label for="carousel-1-3" class="carousel-bullet-3">
+              <label for="carousel-1-3" class="carousel-bullet-3" aria-labelledby="bullet-1-3">
+                <span id="bullet-1-3" hidden>bullet</span>
                 <div class="carousel-bullet-1-3"></div>
               </label>
             </li>
             <li>
-              <label for="carousel-2-3" class="carousel-bullet-3">
+              <label for="carousel-2-3" class="carousel-bullet-3" aria-labelledby="bullet-2-3">
+                <span id="bullet-2-3" hidden>bullet</span>
                 <div class="carousel-bullet-2-3"></div>
               </label>
             </li>
@@ -772,14 +780,14 @@
           <a href="contacts.html" class="logo"><img src="images/logos/logo.png" alt="logotipe"></a>
           <div class="content">
             <address>1223, Main Street, Anytown New York, 38000 USA</address>
-            <span>888 - 963 - 600</span>
+            <a class="info-number" href="tel:888963600" ><span>888 - 963 - 600</span></a>
             <span><a href="#">info@example.com</a> </span>
           </div>
         </section>
         <section>
           <!-- info contact -->
           <h2>Info</h2>
-          <nav class="content">
+          <nav class="content" aria-label="Address Navigation">
             <ul>
               <li> <a href="#">Home</a> </li>
               <li> <a href="#">Blog</a> </li>
@@ -791,7 +799,7 @@
         <section>
           <!-- info contact -->
           <h2>Our Polices</h2>
-          <nav class="content">
+          <nav class="content" aria-label="rights Navigation">
             <ul>
               <li> <a href="#">FAQs</a> </li>
               <li> <a href="#">Privacy Policy</a> </li>
@@ -803,7 +811,7 @@
         <section>
           <!-- info contact -->
           <h2>My Account</h2>
-          <nav class="content">
+          <nav class="content" aria-label="Options Navigation">
             <ul>
               <li> <a href="#">Shop</a> </li>
               <li> <a href="#">Orders</a> </li>
@@ -823,7 +831,7 @@
           </form>
           <div class="content">
             <p>By entering your email, you agree to our Terms of Service and Privacy Policy.</p>
-            <article>
+            <article aria-label="article social media">
               <h3>Follow Us</h3>
               <div class="social-media">
                 <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
